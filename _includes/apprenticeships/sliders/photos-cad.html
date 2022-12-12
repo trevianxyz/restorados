@@ -1,0 +1,29 @@
+<div class="slicky-slider responsive-container">
+    {% for image in site.data.photos.photos-cad %}
+    <div class="col px-0">
+      <img src="{{ image.src }}" class="img-thumbnail apprentice-pic rounded mx-auto" data-img="{{ image.src }}">
+  </div>
+      {% endfor %}
+  </div>
+
+<div id="myModal" class="modal vw-100">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <img id="modalImg" src="" alt="modal image" />
+  </div>
+</div>
+
+<script>
+  $('.apprentice-pic').on('click', function(e) {
+    openModal(e.target.dataset.img);
+  })
+
+  function openModal(img) {
+    $('#modalImg').attr('src', img);
+    $('#myModal').show();
+  }
+
+  function closeModal() {
+    $('#myModal').hide();
+  }
+</script>

@@ -1,0 +1,69 @@
+---
+layout: default
+permalink: /apprenticeships
+testimonials: false
+newsletter: false
+title: Apprenticeships
+cards-col-6: true
+back: Workforce Development
+backhref: /workforce-development
+---
+
+<div class="container">
+  <div class="row">
+    <nav aria-label="breadcrumb bg-white">
+      <ol class="breadcrumb bg-white">
+          <li class="breadcrumb-item bg-white"><a href="/">Home</a></li>
+          {% if page.back %}
+          <li class="breadcrumb-item active bg-white underlinzz" aria-current="page"><a href="{{ page.backhref }}">{{ page.back }}</a></li>
+         {% endif %}
+        </ol>
+      </nav>
+  </div>
+  </div>
+
+<div id="orbit-courses" class="py-1 my-5 ">
+
+  <br>
+  {% include trifecta.html %}
+
+  <div id="four-gacc-apprenticeships" class="container mt-5 py-5 bg-dark">
+      <div class="row mx-auto">
+      <h1 class="text-white mx-auto">
+        The Four GACC Apprenticeships
+      </h1>
+      <div class="text-white mx-auto">
+       <a href="/apprenticeships/mechatronics-technician">Mechatronics Technician</a> | <a href="/apprenticeships/polymer-process-technician"> Polymer Process Technician </a>| <a href="/apprenticeships/cad-cam-technical-designer">CAD-CAM Designer</a> | <a href="/apprenticeships/sales-engineer">Sales Engineer</a>
+    </div>
+  </div>
+  </div>
+    <div class="container bg-dark">
+    <div class="d-flex responsive-container bg-dark">
+  <!--{% include apprenticeships/cards/whatsorbit.html %}-->
+      {% include apprenticeships/cards/mechatronics-technician.html %}
+      {% include apprenticeships/cards/sales-engineering.html %}
+    </div>
+    <div class="d-flex responsive-container bg-dark">
+      {% include apprenticeships/cards/polymer-technician.html %}
+      {% include apprenticeships/cards/cad-cam-designer.html %}
+    </div>
+  {% include components/factoids-loop.html %}
+</div>
+<br>
+  <div class="container m-1 mx-auto">
+    {% include components/raq-faq.html %}
+    <br>
+    {% include modals/call-connect.html %}
+</div>
+{% include apprenticeships/carousel-ra-testies.html %}
+<div class="container" id="anchor--gacc-ra-locations">
+  <div class="row m-0">
+    <div class="col">
+      {% include apprenticeships/gacc-ra-locations.html %}
+    </div>
+  </div>
+</div>
+
+{% include modals/call-connect.html %}
+</div>
+

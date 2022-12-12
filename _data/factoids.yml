@@ -1,0 +1,18 @@
+- source:
+  href: "https://www.apprenticeship.gov/sites/default/files/Career_Seeker_Fact_Sheet.pdf"
+  description: |
+    <span class="brand-bg" style="color: #fff; background-color: rgba(238, 90, 36, .6);">94%</span> of apprentices who complete an apprenticeship retain employment with that company.
+  date:
+  title: "Apprenticeship.gov Fact Sheet"
+- source: "Apprenticeship.gov Fact Sheet"
+  href: "https://www.bain.com/insights/how-clear-career-paths-strengthen-retention-and-diversity/"
+  description: |
+    Apprentice graduates earn more than <span class="brand-bg" style="color: #fff; background-color: rgba(238, 90, 36, .6);">$300,000</span> over their lifetime than peers who are not.
+  date:
+  title:
+- source: Apprenticeship.gov Fact Sheet
+  href:
+  description:  |
+    The average annual salary for a apprentice upon completion is <span class="brand-bg">$77,000</span>.
+  date:
+  title:

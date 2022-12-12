@@ -1,0 +1,96 @@
+<form id="contactUsForm" name="contactUsForm">
+  <div class="container">
+    <div class="row mt-4">
+      <div class="col-sm-12">
+        <div class="card border d-flex h-100">
+          <div class="card-body">
+            <div class="mb-3">
+              <div class="responsive-container">
+                <div class="">
+              <div class="h4 mb-1">
+                First Name
+              </div>
+              <input name="userFirstname" class="form-control" min="3" type="text" required />
+                </div>
+              <div class="">
+              <div class="h4 mb-1">
+                Last Name
+              </div>
+              <input name="userLastname" class="form-control" min="3" type="text" required />
+            </div>
+            </div>
+            </div>
+            <div class="mb-3">
+              <div class="h4 mb-1">
+                <b>Org Name</b>
+              </div>
+              <input name="orgName" class="form-control" min="1" type="text" required />
+            </div>
+            <div class="mb-3">
+              <div class="h4 mb-1">
+                Email
+              </div>
+              <input name="userEmail" class="form-control" min="1" type="email" required />
+            </div>
+            <div class="mb-3">
+              <div class="h4 mb-1">
+                Phone
+              </div>
+              <input name="userPhone" class="form-control" min="1" type="text" required />
+              <div class="mt-2 small">
+                For text confirmation, ex: 412-444-8615
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="h4 mb-1">
+                What topic do you want to connect about?
+              </div>
+              <div class="mb-1">
+ Please give us a little info so we can be prepared for our discussion.
+              </div>
+              <textarea
+                name="moreInfo"
+                class="form-control"
+                min="1"
+                type="text"
+                style="min-height: 200px;"
+                required
+              ></textarea>
+              <div class="mt-2 small">
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="h4 mb-1">
+                How did you learn about us?
+              </div>
+              <div class="mb-1">
+                A few words on how you learned about GACC or our programs is greatly appreciated.
+              </div>
+              <textarea
+                name="moreInfo"
+                class="form-control"
+                min="1"
+                type="text"
+                style="min-height: 200px;"
+                required
+              ></textarea>
+              <div class="mt-2 small">
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button
+              id="contactUsButton"
+              class="btn btn-md btn-primary"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+{% include contact/form-success.html %}

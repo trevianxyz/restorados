@@ -1,0 +1,119 @@
+{% unless page.hide_header %}
+<header>
+  {% if page.show_header_alert_webdev %}
+    {% include header-alert-webdev.html %}
+  {% endif %}
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+
+      <a class="navbar-brand" href="/">
+        <img src="/assets/img/gacc-pitt.jpeg" width="100" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse navbar" id="navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link sr-only" href="/">
+              Home <span>(current)</span>
+            </a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link ga-click-event" title="Workforce Development" ga-label="workforce-development" ga-category="topNav" href="/workforce-development">
+              Workforce Development
+            </a>
+          </li>-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" 
+              href="#" id="navbarDropdownMenuLink" 
+              role="button" data-toggle="dropdown" 
+              aria-haspopup="true" 
+              aria-expanded="false" 
+              title="Workforce Development" 
+              ga-label="workforce-development" 
+              ga-category="topNav">
+              Workforce Development
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/apprenticeships">Apprenticeships</a>
+              <a class="dropdown-item" href="/pre-apprenticeships">Pre-Apprenticeships</a>
+              <a class="dropdown-item" href="/workforce-development/train-the-trainer">Train the Trainer</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" 
+              href="#" id="navbarDropdownMenuLink" 
+              role="button" data-toggle="dropdown" 
+              aria-haspopup="true" 
+              aria-expanded="false" 
+              title="Workforce Development" 
+              ga-label="workforce-development" 
+              ga-category="topNav">
+              Stakeholders
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/for-employers">Employers</a>
+              <a class="dropdown-item" href="/for-educators">Educators</a>
+              <a class="dropdown-item" href="/for-career-seekers">Career Seekers</a>
+            </div>
+          </li>
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" 
+              href="#" id="navbarDropdownMenuLink" 
+              role="button" data-toggle="dropdown" 
+              aria-haspopup="true" 
+              aria-expanded="false" 
+              title="Workforce Development" 
+              ga-label="workforce-development" 
+              ga-category="topNav">
+              Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/german-apprenticeship-model">The German Model</a>
+              <a class="dropdown-item" href="/data-visualizations">Data Visualizations</a>
+              <a class="dropdown-item" href="/blog">Blog</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" 
+              href="#" id="navbarDropdownMenuLink" 
+              role="button" data-toggle="dropdown" 
+              aria-haspopup="true" 
+              aria-expanded="false" 
+              title="Workforce Development" 
+              ga-label="workforce-development" 
+              ga-category="topNav">
+              About
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/about">About GACC</a>
+              <a class="dropdown-item" href="/about#anchor--staff">Staff</a>
+              <a class="dropdown-item" title="Membership" ga-label="membership" ga-category="topNav" href="/membership">
+                Membership
+              </a>
+              <a class="dropdown-item" href="/about#anchor--contactus">Contact Us</a>
+              <a class="dropdown-item" href="/about#anchor--gacc-ra-locations">Locations</a>
+            </div>
+          </li>
+        </ul>
+        <div class="navbar-nav navbar-nav--right">
+          <a
+            class="top-nav-btn btn btn-primary ga-click-event"
+            title="Member Login"
+            ga-label="Member Login"
+            ga-category="topNav"
+            href="{{ site.turbine_app_url }}/login/gacc"
+            target="_blank"
+          >
+            RTI Login
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+{% endunless %}

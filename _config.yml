@@ -1,0 +1,106 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://apprenticeship-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://apprenticeshipxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+name: GACC PIT Apprenticeships
+title: GACC Pittsburgh - Apprenticeships & Workforce Development
+email: info@gaccpit.com
+tagline: Workers with basic programming skills and tech know-how are in-demand today. Upstream Coding can put higher-paying jobs in your reach.
+description: 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://gaccpit.workforce.dev # the base hostname & protocol for your site, e.g. http://example.com
+turbine_app_url: https://app.turbinelms.com
+og_image: https://images.unsplash.com/photo-1600466886092-f76fabd39a61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2920&q=80
+s3bucket: https://s3.us-east-2.amazonaws.com/upstreamcoding.com
+meta_keywords: [
+  'candidate technical assessment',
+  'evaluate technical skills',
+  'assess coding skills',
+  'whitelabel technical assessment',
+  'modern website development',
+  'coding bootcamp',
+  'code school',
+  'web developer coding bootcamp',
+  'apprenticeship kotlin',
+  'apprenticeship flask',
+  'apprenticeship python',
+  'apprenticeship node',
+  'apprenticeship react',
+  'apprenticeship html',
+  'apprenticeship css',
+  'apprenticeship javascript',
+  'apprenticeship how to build a website',
+  'apprenticeship frontend web development',
+  'apprenticeship coding fast',
+  'apprenticeship to code',
+  'evening coding classes',
+  'part time coding classes',
+  'coding for adults',
+  'website programming evening classes',
+  'apprenticeship to code html',
+  'apprenticeship to write code',
+  'computer coding classes',
+  'computer coding course',
+  'computer coding training',
+  'apprenticeship computer programming',
+  'fastest way to apprenticeship web development',
+  'building a website from scratch',
+  'apprenticeship web development for beginners',
+  'programs to apprenticeship coding',
+  'coding courses for beginners',
+  'apprenticeship coding for beginners',
+  'apprenticeship to code course'
+]
+
+# Build settings
+# theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/blog/page:num/"
+paginate_path: "/data-visualizations/page:num/"
+
+collections:
+  pages:
+    output: true
+
+sass:
+  style: compact # possible values: nested expanded compact compressed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+  - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

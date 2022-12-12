@@ -1,0 +1,52 @@
+<div class="col-sm-12 col-md-6 {% if page.cards-col-6 == true %} col-lg-6 {% else %} col-lg-4 {% endif %} mb-4">
+  <div class="card no-hover shadow-sm h-100">
+    <img class="card-img-top" src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80" alt="GACC Apprenticeship - CAD CAM Designer" />
+    <div class="card-body">
+      <h2 class="text-center">
+    CAD/CAM Technical Designer
+      </h2>
+      <p class="card-text">
+        Technical Designers are at the start of all product design and advanced manufacturing processes today. They have extensive knowledge of software programs to produce complex, detailed digital assets, surface and solid models and more.
+      </p>
+      <p><b>up to ~5,000 hours</b> of On-the-Job Training</p>
+      <p>
+        <b>500 Hours</b> of Related Technical Instruction in:
+        <br />
+        <span class="text-muted mt-2">
+          <code>Technical Design</code>, <code>2D</code>, <code>3D</code>, <code>Prototyping</code>, <code>Computer Design Software</code>, <code>AutoCAD</code>, <code>Solidworks</code>
+        </span>
+      </p>
+
+      <p>
+        <b>Credentials Earned:</b>
+        <ul>
+        <li>Associates Degree ub Computer-aided Drafting & Design Technology (A.S.)</li>
+      <li>Journeyman certification issued by the Department of Labor</li>
+      <li>Globally-Recognized German DiHK Certification</li>
+      </ul>
+      </p>
+
+      <div class="d-flex align-items-center justify-content-around">
+        {% if page.hide_card_details_btn %}
+        {% include modals/call-connect.html %}
+        {% else %}
+          <a
+            role="button"
+            class="btn btn-md btn-primary ga-click-event my-2 stretched-link"
+            title="CAD "
+            href="/apprenticeships/cad-cam-technical-designer"
+            ga-label="CAD CAM Technical Designer"
+            ga-category="apprenticeships"
+          >
+            Details
+          </a>
+        {% endif %}
+        <div class="text-right">
+          <span class="bg-warning"><b>Enrolling Now</b></span><br />
+          <small class="text-muted"> last updated {{ "now" | date: "%b %d, 20%y" }} </small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
